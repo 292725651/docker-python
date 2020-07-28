@@ -132,7 +132,7 @@ RUN pip install ibis-framework && \
     /tmp/clean-layer.sh
 
 # scikit-learn dependencies
-RUN pip install scipy && \
+RUN pip install scipy==1.1.0 && \
     pip install scikit-learn && \
     # HDF5 support
     pip install h5py && \
